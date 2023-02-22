@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
+    integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <img src="images/logo.png" alt="">
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto navbar-ul">
+        <li class="nav-item dropdown bg-light">
+          <a class="nav-link dropdown-toggle  navfont" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Home
+          </a>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sass Startup Demo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">IT Startup Demo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Digital Marketing Demo</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navfont" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">User</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Features</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Team</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Testimonials</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Pricing</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">FAQ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">404 Error Page</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Privacy Policy</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Terms & Conditions</a>
+          </div>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link navfont" href="#">About</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navfont" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Service Style One</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Service Style Two</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Service Details</a>
+          </div>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navfont" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Projects</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Project details</a>
+          </div>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navfont" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Blog</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Blog Details</a>
+          </div>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link navfont" href="#">Link</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <form class="form-inline navbuttons">
+          <button class="btn  btn-outline-primary navbutton1" type="button">Sign In</button>
+          <br>
+          <button class="btn btn-outline-primary navbutton2" type="button">Start Project +</button>
+        </form>
+      </ul>
+
+    </div>
+  </nav>
+  <br><br><br><br>
+  <div class="container-fluid position-relative">
+    <div id="banner-image">
+      <img class="top4" src="images/banner-shape1.png" alt="">
+      <img class="top5" src="images/banner-shape2.png" alt="">
+      <img class="top6" src="images/banner-shape3.png" alt="">
+    </div>
+    <div class="banner-text row align-items-center">
+      <div class="col-12 col-lg-6">
+        <p><img src="images/banner-shape4.png" alt="">Dilx Sass Startup</p>
+        <h1 class="baslik">Manage Your </h1>
+        <h1 class="baslik">Business Platform </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at voluptates corrupti. Soluta, deserunt
+          delectus.</p>
+        <button class="btn btn-outline-primary navbutton2" type="button">Start Project +</button>
+        <button class="btn btn-outline-primary navbutton1" type="button">Play Video ►</button>
+        <img class="top1" src="images/banner-shape1.png" alt="">
+        <img class="top2" src="images/banner-shape2.png" alt="">
+        <img class="top3" src="images/banner-shape3.png" alt="">
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="offeringservices">
+    <p class="bluep">Offering Services</p>
+    <h2>Our Amazing Features</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 fullsecurity" href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 " href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 " href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 " href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 " href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="features">
+        <img class="serviceshape" src="images/service-shape.png" alt="">
+        <span class="h4 asd " href="#">Full Security</span>
+        <span class="featurespan">Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam
+          quaerat rsit amet</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="aboutus">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 aboutusleftside">
+        <p class="bluep h3 ml-3">About Us</p>
+        <h2 class="aboutush2 h1 ml-2">Our Company Is Best To Serve</h2>
+        <ul>
+          <li class="li1">
+            <h4 class="text-primaryy">QR Code Scanner</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iste?</p>
+          </li>
+          <li class="li1">
+            <h4 class="text-primaryy">CRM Software Management</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iste?</p>
+          </li>
+          <li class="li1">
+            <h4 class="text-primaryy">Organization Skills & Management</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iste?</p>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="col-lg-6 col-sm-12 aboutusrightside">
+        <div class="aboutusimg">
+          <form action="https://www.w3docs.com/" method="get" target="_blank">
+            <button class="aboutusvideobutton" type="submit">▶
+
+            </button>
+
+          </form>
+          <img class="about1" src="images/about1.png" alt="">
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="inquiry">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="inquiry-img">
+          <img src="images/inquiry-main.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-10">
+        <div class="inquiry-content">
+          <div class="section-title">
+            <span>Project Inquiry</span>
+
+            <span class="h1">Have Any Questions Regarding The Project About?</span>
+          </div>
+          <a href="" class="inquiry-button"></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-2">
+        <div class="inquiry5-img">
+          <img src="images/inquiry5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-area">
+    <div class="feature-section-title">
+      <span class="text-primary">Features</span>
+      <h2>We Provide Maximum</h2>
+      <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quam distinctio nisi
+        repudiandae quidem voluptate consequatur earum ex quis delectus.</p>
+    </div>
+    <div class="row align-items-center ">
+      <div class="col-lg-6 feature-col1">
+        <img src="images/feature1.png" class="feature-img" alt="">
+      </div>
+      <div class="col-lg-6 feature-col2">
+        <div class="col2-content">
+          <div class="col2-top">
+            <span class="circle">01</span>
+
+            <h2 class="mt-4">Getting Started Page</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum culpa molestiae fugiat quas neque dolorum?
+            </p>
+
+          </div>
+          <div class="col2-bottom row">
+            <div class="col2-bottom-left col-6">
+              <h3 class="text-primaryy">Unique Design</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, commodi?</p>
+            </div>
+            <div class="col2-bottom-right col-6">
+              <h3 class="text-primaryy">Unlimited Video Call</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui mollitia pariatur nesciunt
+                ullam corrupti!</p>
+            </div>
+            <div class="col2-bottom-button">
+              <button class="btn btn-outline-primary navbutton2">
+                Read More +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 feature-col2">
+        <div class="col2-content">
+          <div class="col2-top">
+            <span class="circle">02</span>
+
+            <h2 class="mt-4">Review Code & Illustration</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum culpa molestiae fugiat quas neque dolorum?
+            </p>
+
+          </div>
+          <div class="col2-bottom row">
+            <div class="col2-bottom-left col-6">
+              <h3 class="text-primaryy">Add Favourite contact</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, commodi?</p>
+            </div>
+            <div class="col2-bottom-right col-6">
+              <h3 class="text-primaryy">Start Coding Format</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui mollitia pariatur nesciunt
+                ullam corrupti!</p>
+            </div>
+            <div class="col2-bottom-button">
+              <button class="btn btn-outline-primary navbutton2">
+                Read More +
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6 feature-col1">
+        <img src="images/feature2.png" class="feature-img" alt="">
+      </div>
+      <div class="col-lg-6 feature-col1">
+        <img src="images/feature3.png" class="feature-img" alt="">
+      </div>
+      <div class="col-lg-6 feature-col2">
+        <div class="col2-content">
+          <div class="col2-top">
+            <span class="circle">03</span>
+
+            <h2 class="mt-4">Premium Comments Toggling</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum culpa molestiae fugiat quas neque dolorum?
+            </p>
+
+          </div>
+          <div class="col2-bottom row">
+            <div class="col2-bottom-left col-6">
+              <h3 class="text-primaryy">Outdated Comments</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, commodi?</p>
+            </div>
+            <div class="col2-bottom-right col-6">
+              <h3 class="text-primaryy">Mordan Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui mollitia pariatur nesciunt
+                ullam corrupti!</p>
+            </div>
+            <div class="col2-bottom-button">
+              <button class="btn btn-outline-primary navbutton2">
+                Read More +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="secrets">
+
+    <h1>The Secrets to Life Success People <br> <span class="text-primaryy">Have Got</span></h1>
+    <div class="row align-items-center m-5 ">
+      <div class="col-6 col-sm-3 col-lg-3">
+        <div class="counter-item">
+          <h1><span class="odometer text-primaryy" id="odometer1"></span>
+            <span class="h3 text-primaryy">M</span></h1>
+          <p class="odo-definer">Data Entry</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-3">
+        <div class="counter-item text-primaryy">
+          <h1><span class="odometer" id="odometer2"></span>
+            <span class="h3 text-primaryy">+</span></h1>
+          <p class="odo-definer">Appreciation</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-3">
+        <div class="counter-item">
+          <h1><span class="odometer text-primaryy" id="odometer3"></span>
+            <span class="h3 text-primaryy">K</span></h1>
+          <p class="odo-definer">Satisfied Client</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-3">
+        <div class="counter-item">
+          <h1><span class="odometer text-primaryy" id="odometer4"></span>
+            <span class="h3 text-primaryy">K</span></h1>
+          <p class="odo-definer">Response Time</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div>
+    <div class="row ml-4 mt-4 mb-4">
+      <div class="col-sm6 col-lg-6">
+        <div class="application-content">
+          <div class="application-title">
+            <span class="text-primaryy h4">Application Building</span>
+            <h2 class="h1 ">Way To Build Beautiful Interface's Your Application</h2>
+          </div>
+          <div class="application-list ml-4">
+            <p class="application-p"><span class="tik">✓</span> QR Code Scanner</p>
+            <p class="application-p"><span class="tik">✓</span> Start Coding Format</p>
+            <p class="application-p"><span class="tik">✓</span> Organizations Skills & Management</p>
+            <p class="application-p"><span class="tik">✓</span> Add Favourite Contact</p>
+            <p class="application-p"><span class="tik">✓</span> Unlimited Video Call</p>
+
+          </div>
+        </div>
+        <button class="btn btn-outline-primary navbutton2 ml-5" type="button">Read More</button>
+
+      </div>
+      <div class="col-sm6 col-lg-6 pr-0 application-img-container">
+
+        <img class="application-img" src="images/application-main.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="pricing bg-light">
+    <div class="pricing-title">
+      <span class="text-primaryy h4">Pricing Plans</span>
+      <h2 class="h1">Affordable Pricing</h2>
+      <div class="pricingbuttons">
+        <button class="btn btn-outline-primary navbutton1">+ Monthly Plan </button>
+        <button class="btn btn-outline-primary navbutton2">+ Yearly Plan </button>
+
+      </div>
+    </div>
+    <div class="pricing-choices">
+      <div class="row pricing-row">
+        <div class="col-lg-4 pricing-col">
+          <div class="pricing-col-title">
+            <p class="h2 text-dark "><span class="tik">✓</span> Free</p>
+          </div>
+          <div class="pricing-col-price1">
+            <span class="h1 ">$ 0.00/Year</span>
+          </div>
+          <div class="pricing-col-feature">
+            <p class="price-p"><span class="arrow"> → </span>Google Analytics </p>
+            <p class="price-p"><span class="arrow"> → </span>Drag & Drop Widgets </p>
+            <p class="price-p"><span class="arrow"> → </span>Mobile + Desktop Apps </p>
+            <p class="price-p"><span class="arrow"> → </span>Messenger Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>100 ChatBot Triggers </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Info </p>
+            <p class="price-p"><span class="arrow"> → </span>Quick Response </p>
+            <p class="price-p"><span class="arrow"> → </span>24/7 Live Chat </p>
+            <p class="price-p"><span class="arrow"> → </span>Email Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Notes </p>
+            <p class="price-p"><span class="arrow"> → </span> Integration Email </p>
+            <button class="btn btn-outline-primary navbutton2">Get Started </button>
+
+          </div>
+        </div>
+        <div class="col-lg-4 pricing-col">
+          <div class="pricing-col-title">
+            <p class="h2 text-dark"><span class="tik">✓</span> Starter</p>
+          </div>
+          <div class="pricing-col-price2">
+            <span class="h1">$ 49.99/Year</span>
+          </div>
+          <div class="pricing-col-feature">
+            <p class="price-p"><span class="arrow"> → </span>Google Analytics </p>
+            <p class="price-p"><span class="arrow"> → </span>Drag & Drop Widgets </p>
+            <p class="price-p"><span class="arrow"> → </span>Mobile + Desktop Apps </p>
+            <p class="price-p"><span class="arrow"> → </span>Messenger Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>100 ChatBot Triggers </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Info </p>
+            <p class="price-p"><span class="arrow"> → </span>Quick Response </p>
+            <p class="price-p"><span class="arrow"> → </span>24/7 Live Chat </p>
+            <p class="price-p"><span class="arrow"> → </span>Email Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Notes </p>
+            <p class="price-p"><span class="arrow"> → </span> Integration Email </p>
+            <button class="btn btn-outline-primary navbutton2">Get Started </button>
+
+          </div>
+        </div>
+        <div class="col-lg-4 pricing-col">
+          <div class="pricing-col-title">
+            <p class="h2 text-dark"><span class="tik">✓</span> Enterprise</p>
+          </div>
+          <div class="pricing-col-price3">
+            <span class="h1">$ 56.00/Year</span>
+          </div>
+          <div class="pricing-col-feature">
+            <p class="price-p"><span class="arrow"> → </span>Google Analytics </p>
+            <p class="price-p"><span class="arrow"> → </span>Drag & Drop Widgets </p>
+            <p class="price-p"><span class="arrow"> → </span>Mobile + Desktop Apps </p>
+            <p class="price-p"><span class="arrow"> → </span>Messenger Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>100 ChatBot Triggers </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Info </p>
+            <p class="price-p"><span class="arrow"> → </span>Quick Response </p>
+            <p class="price-p"><span class="arrow"> → </span>24/7 Live Chat </p>
+            <p class="price-p"><span class="arrow"> → </span>Email Integration </p>
+            <p class="price-p"><span class="arrow"> → </span>Visitor Notes </p>
+            <p class="price-p"><span class="arrow"> → </span> Integration Email </p>
+            <button class="btn btn-outline-primary navbutton2">Get Started </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="client-feedbacks">
+
+    <div class="feedback-title">
+      <h1>Client Feedbacks</h1>
+      <span class="text-dark h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, eaque.</span>
+    </div>
+
+    <div class="wrapper">
+      <div class="carousel owl-carousel">
+        <div class="card card-1">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important1</p>
+        </div>
+        <div class="card card-2">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important2</p>
+        </div>
+        <div class="card card-3">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important3</p>
+        </div>
+        <div class="card card-4">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important4</p>
+        </div>
+        <div class="card card-5">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important5</p>
+        </div>
+        <div class="card card-6">
+          <span class="text-secondary">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, alias quidem.
+            Cumque consectetur ea rem!"</span>
+          <p class="text-dark">-Someone Important6</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="questions">
+<div class="questions-title">
+  <h1>What Do You Want To <span class="text-primaryy">Know</span></h1>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How can I cancel/pause my subscription?
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Does the price go up as my team gets larger?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What access do I have on a free trial?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+             non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              What access do I have on the free plan?
+
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+             non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 questions-img"><img src="images/faq-main.png" alt=""></div>
+</div>
+</div>
+<div class="worktogether">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>
+        Have A Project In Mind? Let's <br> Work Together
+
+      </h1>
+
+    </div>
+    <div class="col-lg-6">
+      <button class="btn btn-outline-primary navbutton2" type="button">Start</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="footer-img">
+        <img src="images/logo-two.png" alt="">
+      </div>
+      <div class="footer-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis veniam esse cum laudantium est similique Lorem ipsum dolor sit amet.</div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="footer-item"><h4 class="text-light ml-5">Support</h4></div>
+      <ul>
+        <li class="li2">FAQ</li>
+        <li class="li2">Privacy Policy</li>
+        <li class="li2">Terms & Conditions</li>
+        <li class="li2">Community</li>
+        <li class="li2">Contact Us</li>
+      </ul>
+
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="footer-item"><h4 class="text-light ml-5">Company</h4></div>
+      <ul>
+        <li class="li2">About Us</li>
+        <li class="li2">Services</li>
+        <li class="li2">Features</li>
+        <li class="li2">Pricing</li>
+        <li class="li2">News</li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="footer-item"><h4 class="text-light ml-5">Address</h4></div>
+      <ul>
+        <li class="li2"> 2659 Autostrad St, London, UK</li>
+        <li class="li2"> hello@dilx.com</li>
+        <li class="li2"> 215 - 123 - 4567</li>
+        <li class="li2">Mon - Fri/9:00 AM - 6:00 PM</li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+    integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    setTimeout(function () {
+      odometer1.innerHTML = '100'
+      odometer2.innerHTML = '850'
+      odometer3.innerHTML = '1,000'
+      odometer4.innerHTML = '140'
+    }, 100)
+
+
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: false
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
